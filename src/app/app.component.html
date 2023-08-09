@@ -1,6 +1,9 @@
-<app-header (sidebarToggle)="toggleSidebar()"></app-header>
+<app-header (sidebarToggle)="toggleSidebar()" (sidebarToggleR)="toggleSidebarR()"></app-header>
 <mat-drawer-container class="app-container">
   <mat-drawer mode="side" [opened]="isSidebarOpen">
+    <app-sidebar></app-sidebar>
+  </mat-drawer>
+  <mat-drawer mode="side" position="end" [opened]="isSidebarOpenR">
     <app-sidebar></app-sidebar>
   </mat-drawer>
   <mat-drawer-content>

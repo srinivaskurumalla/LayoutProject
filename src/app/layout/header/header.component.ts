@@ -7,11 +7,15 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent {
   @Output() sidebarToggle = new EventEmitter<void>();
+  @Output() sidebarToggleR = new EventEmitter<void>();
 
   toggleSidebar() {
     this.sidebarToggle.emit();
   }
 
+  toggleSidebarR() {
+    this.sidebarToggleR.emit();
+  }
   onLoginClick() {
     console.log('Login link clicked');
   }

@@ -3,3 +3,13 @@
   width: 100%;
 }
 
+/* Left sidebar styles */
+mat-drawer[mode='side'] {
+  width: 250px;
+}
+
+/* Right sidebar styles */
+mat-drawer[mode='side'][position='end'] {
+  width: 250px;
+  right: 0;
+}
